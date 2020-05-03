@@ -1,3 +1,9 @@
+variable "branches_to_be_notified" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "confidential_issue_channel" {
   description = "(optional)"
   type        = string

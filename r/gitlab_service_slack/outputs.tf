@@ -1,3 +1,8 @@
+output "branches_to_be_notified" {
+  description = "returns a string"
+  value       = gitlab_service_slack.this.branches_to_be_notified
+}
+
 output "confidential_issues_events" {
   description = "returns a bool"
   value       = gitlab_service_slack.this.confidential_issues_events

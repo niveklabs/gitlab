@@ -1,10 +1,11 @@
 terraform {
   required_providers {
-    gitlab = ">= 2.5.0"
+    gitlab = ">= 2.5.1"
   }
 }
 
 resource "gitlab_service_slack" "this" {
+  branches_to_be_notified      = var.branches_to_be_notified
   confidential_issue_channel   = var.confidential_issue_channel
   confidential_issues_events   = var.confidential_issues_events
   confidential_note_events     = var.confidential_note_events

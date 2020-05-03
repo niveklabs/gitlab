@@ -1,6 +1,7 @@
 module "gitlab_service_slack" {
   source = "./modules/gitlab/r/gitlab_service_slack"
 
+  branches_to_be_notified      = null
   confidential_issue_channel   = null
   confidential_issues_events   = null
   confidential_note_events     = null
