@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    gitlab = ">= 2.5.1"
+    gitlab = ">= 2.6.0"
   }
 }
 
